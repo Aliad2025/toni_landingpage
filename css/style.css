@@ -21,8 +21,24 @@ body {
 }
 
 .header {
-    height: 100px;
-    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    & .curriculum{
+        /* crear un botón */
+        background-color: #f1f1f1;
+        border: 1px solid #8b8b8b;
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #8b8b8b;
+        font-size: 14px;
+
+        &:hover {
+            background-color: #8b8b8b;
+            color: #f1f1f1;
+            transition: .8s;
+        }
+    }
 }
 .main {
     display: flex;
