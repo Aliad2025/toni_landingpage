@@ -8,13 +8,14 @@ body {
     justify-content: center;
     height: 100vh;
     padding: 20px;
+    color: #8b8b8b;
 }
 
 #container {
     width: 100%;
     max-width: 1200px;
     height: 100%;
-    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to top, #f7797d, #fbd786, #c6ffdd);
     border-radius: 10px;
     box-shadow: 0 0 10px #0000001a;
     padding: 20px;
@@ -23,7 +24,7 @@ body {
 .header {
     display: flex;
     justify-content: flex-end;
-    & .curriculum{
+    & .curriculum {
         /* crear un botón */
         background-color: #f1f1f1;
         border: 1px solid #8b8b8b;
@@ -36,7 +37,7 @@ body {
         &:hover {
             background-color: #8b8b8b;
             color: #f1f1f1;
-            transition: .8s;
+            transition: 0.8s;
         }
     }
 }
@@ -45,6 +46,21 @@ body {
     & .info {
         height: 100%;
         flex-grow: 1;
+
+        & .saludo {
+            font-size: 25px;
+            color: #f7797d;
+        }
+        & .nombre {
+            font-size: 48px;
+            color: #1e1e1e;
+        }
+        & .profesion {
+            font-size: 18px;
+            color: #1e1e1e;
+        }
+        & .descripcion {
+        }
     }
     & .foto {
         height: 100%;
