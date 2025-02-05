@@ -1,10 +1,37 @@
-html{
+html {
     font-size: 16px;
     font-family: sans-serif;
     background-color: #f1f1f1;
 }
-body{
+body {
     display: flex;
     justify-content: center;
+    height: 100vh;
     padding: 20px;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+    padding: 20px;
+}
+
+.header {
+    height: 100px;
+    background-color: green;
+}
+.main {
+    display: flex;
+    & .info {
+        height: 100%;
+        flex-grow: 1;
+    }
+    & .foto {
+        height: 100%;
+        flex-grow: 1;
+    }
 }
