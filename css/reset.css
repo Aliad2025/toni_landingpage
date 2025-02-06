@@ -4,6 +4,7 @@
     line-height: 1;
     box-sizing: border-box;
 }
+/* volvemos a dar margin a los H's y párrafos */
 h1,h2,h3,h4,h5,h6,p{
     margin: 16px;
 }

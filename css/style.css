@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'signika';
+    src: url(/fonts/signika.woff2) format('woff2');
+}
+
 html {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: "signika", sans-serif;
     background-color: #f1f1f1;
 }
 body {
@@ -58,6 +63,13 @@ body {
         & .profesion {
             font-size: 18px;
             color: #1e1e1e;
+
+            & span:nth-child(1){
+                color:green
+            }
+            & span:nth-child(2){
+                color:violet;
+            }
         }
         & .descripcion {
         }
