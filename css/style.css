@@ -9,7 +9,6 @@ html {
     background-color: #f1f1f1;
 }
 body {
-
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -17,6 +16,10 @@ body {
     color: #8b8b8b;
     /* eliminar la posibilidad de que el usuario haga scroll */
     overflow: hidden;
+    /* @Smartphone */
+    @media screen and (max-width: 768px) {
+        overflow: scroll;
+    }
 }
 
 #container {
@@ -49,14 +52,21 @@ body {
             transition: 0.8s;
         }
     }
-    
 }
 .main {
     display: flex;
+    /* @Smartphone */
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
     & .info {
         height: 100%;
         padding: 80px;
-        
+        /* @Smartphone */
+        @media screen and (max-width: 768px) {
+            padding: 0px;  
+        }
+
         & .saludo {
             font-size: 25px;
             color: #f7797d;
@@ -90,3 +100,4 @@ body {
         }
     }
 }
+
